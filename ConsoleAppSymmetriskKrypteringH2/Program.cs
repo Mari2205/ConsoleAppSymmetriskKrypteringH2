@@ -11,53 +11,6 @@ namespace ConsoleAppSymmetriskKrypteringH2
     {
         static void Main(string[] args)
         {
-            #region old
-            //Kryptering kryptering = new Kryptering();
-            //Decrypt decrypting = new Decrypt();
-            //GenrateKey genrateKey = new GenrateKey();
-
-            //byte[] key = genrateKey.GenrateRandomNumber(8);
-            //byte[] iv = genrateKey.GenrateRandomNumber(8);
-            //const string originalMessage = "Hej jeg bliver encrypted";
-
-            //byte[] encryptedDES = kryptering.DESEncrypt(Encoding.UTF8.GetBytes(originalMessage), key, iv);
-            //byte[] decryptedDES = decrypting.DNSDecrypt(encryptedDES, key, iv);
-
-            //string decryptedMessageWhitDES = Encoding.UTF8.GetString(decryptedDES);
-
-            //Console.WriteLine("Original Text = " + originalMessage);
-            //Console.WriteLine("Encrypted Text = " + Convert.ToBase64String(encryptedDES));
-            //Console.WriteLine("Decrypted Text = " + decryptedMessageWhitDES);
-
-            //// --------------------------------------------------------------------------------------------//
-
-            //key = genrateKey.GenrateRandomNumber(16); // 24 ??
-            //iv = genrateKey.GenrateRandomNumber(8);
-
-            //byte[] encryptedTripleDES = kryptering.TripleDESEncrypt(Encoding.UTF8.GetBytes(originalMessage), key, iv);
-            //byte[] decryptedTripleDES = decrypting.TripleDESDecrypt(encryptedTripleDES, key, iv);
-
-            //var decryptedMessageWhitTripleDES = Encoding.UTF8.GetString(decryptedTripleDES);
-
-            //Console.WriteLine("Original Text = " + originalMessage);
-            //Console.WriteLine("Encrypted Text = " + Convert.ToBase64String(encryptedTripleDES));
-            //Console.WriteLine("Decrypted Text = " + decryptedMessageWhitTripleDES);
-
-            ////--------------------------------------------------------------------------------------------//
-
-
-            //key = genrateKey.GenrateRandomNumber(32);
-            //iv = genrateKey.GenrateRandomNumber(16);
-
-            //byte[] encryptedAes = kryptering.AesEncrypt(Encoding.UTF8.GetBytes(originalMessage), key, iv);
-            //byte[] decryptedAes = decrypting.AesDecrypt(encryptedAes, key, iv);
-
-            //var decryptedMessage = Encoding.UTF8.GetString(decryptedAes);
-
-            //Console.WriteLine("Original Text = " + originalMessage);
-            //Console.WriteLine("Encrypted Text = " + Convert.ToBase64String(encryptedAes));
-            //Console.WriteLine("Decrypted Text = " + decryptedMessage);
-            #endregion
             Gui gui = new Gui();
 
             string[] choicesForTheUser = { "DES", "Triple DES", "Aes" };
